@@ -1,3 +1,5 @@
+/*afooter*/
+
 .footer-contact {
   padding: 50px 0;
   display: flex;
@@ -45,7 +47,7 @@
     color: $text-black;
     border-bottom: 1px solid $color-bac3;
 
-    &:hover{
+    &:hover {
       color: $text-black;
     }
   }
@@ -55,36 +57,36 @@
     @include transi;
     display: flex;
     justify-content: end;
-    &:hover{
+    &:hover {
       opacity: 0.8;
     }
   }
 }
-@media only screen and (max-width :992px) {
-  .footer-contact{
-    &__list{
+@media only screen and (max-width: 992px) {
+  .footer-contact {
+    &__list {
       width: 100%;
       margin-bottom: 30px;
     }
-    &__payment{
+    &__payment {
       width: 100%;
     }
   }
 }
-@media only screen and (max-width :768px) {
-  .footer-contact{
-    &__list{
+@media only screen and (max-width: 768px) {
+  .footer-contact {
+    &__list {
       width: 100%;
       margin-bottom: 30px;
       flex-direction: column;
     }
-    &__item{
+    &__item {
       flex-direction: column;
       justify-content: center;
       text-align: center;
       margin-bottom: 30px;
     }
-    &__payment{
+    &__payment {
       justify-content: center;
     }
   }

@@ -1,4 +1,4 @@
-/* GENERAL */
+/* genal */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -20,11 +20,12 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: $font-mazzard-h;
-  background-image: url("../../img/bodybg_top.png") , url("../../img/bodybg__bottom.png");
-  background-position: top , bottom;
+  background-image: url("../../img/bodybg_top.png"),
+    url("../../img/bodybg__bottom.png");
+  background-position: top, bottom;
   background-size: 1900px;
   background-repeat: no-repeat;
-  background-color:  $color-fbf4;
+  background-color: $color-fbf4;
 }
 
 img {
@@ -32,15 +33,15 @@ img {
   height: auto;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-main{
+main {
   background-color: $white;
   max-width: 1450px;
   width: 100%;

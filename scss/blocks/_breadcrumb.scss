@@ -1,4 +1,6 @@
-#breadcrumb{
+/*breadcrums*/
+
+#breadcrumb {
   @include bg(center);
   background-size: cover;
   background-image: url("../../img/lime-img.jpg");
@@ -21,16 +23,16 @@
     margin-right: 5px;
   }
 
-  &__link{
+  &__link {
     font-size: 14px;
     color: $color-555;
     @include transi;
 
-    &:hover{
+    &:hover {
       color: $color-bac3;
     }
   }
 }
-.navig-top{
+.navig-top {
   background-color: $color-0a47;
 }

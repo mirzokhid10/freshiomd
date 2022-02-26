@@ -1,3 +1,5 @@
+/*mxinis*/
+
 @mixin bg($posi) {
   background-position: $posi;
   background-repeat: no-repeat;
@@ -30,26 +32,26 @@
   position: relative;
   padding-right: 10px;
 
-  &:hover{
+  &:hover {
     color: $color-bac3;
 
-    &::after{
+    &::after {
       background-color: $color-bac3;
     }
-    i{
+    i {
       right: -3px;
       color: $color-bac3;
     }
   }
-  &::after{
-    content: '';
+  &::after {
+    content: "";
     height: 1px;
     width: calc(100% + 8px);
     background-color: $black;
     display: block;
     @include transi;
   }
-  i{
+  i {
     font-size: 9px;
     color: $text-black;
     @include transi;

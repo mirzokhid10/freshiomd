@@ -1,4 +1,6 @@
-footer{
+// footer
+
+footer {
   margin: 0 auto 65px auto;
   background-color: $white;
   max-width: 1450px;
@@ -29,7 +31,7 @@ footer{
   }
 
   &__item {
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 15px;
     }
   }
@@ -53,7 +55,7 @@ footer{
     @include transi;
     margin: 0;
 
-    &:hover{
+    &:hover {
       color: $color-bac3;
     }
   }
@@ -71,21 +73,21 @@ footer{
     font-size: 14px;
     color: $color-555;
     text-align: center;
-    span{
+    span {
       color: $color-bac3;
     }
   }
 }
-@media only screen and (max-width:992px) {
-  .footer{
-    &__column{
+@media only screen and (max-width: 992px) {
+  .footer {
+    &__column {
       margin-bottom: 30px;
     }
   }
 }
-@media only screen and (max-width:768px) {
-  .footer{
-    &__column{
+@media only screen and (max-width: 768px) {
+  .footer {
+    &__column {
       text-align: center;
     }
   }

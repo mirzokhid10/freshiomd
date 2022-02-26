@@ -1,5 +1,6 @@
-.partners {
+// offcanvas
 
+.partners {
   &__list {
     @include mp;
     padding: 60px 0;
@@ -13,8 +14,8 @@
     opacity: 0.6;
     @include transi;
 
-    &:hover{
-      opacity: 1
+    &:hover {
+      opacity: 1;
     }
   }
 

@@ -1,3 +1,5 @@
+// site header
+
 .site-header {
   width: 100%;
   background-color: transparent;
@@ -25,8 +27,7 @@
   }
 
   &__item {
-
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
@@ -37,14 +38,14 @@
     text-transform: uppercase;
     @include transi;
 
-    &:hover{
+    &:hover {
       color: $color-bac3;
     }
   }
 }
 
-@media only screen and (max-width:992px) {
-  .site-header{
+@media only screen and (max-width: 992px) {
+  .site-header {
     display: none;
   }
 }

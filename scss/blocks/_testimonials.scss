@@ -1,13 +1,14 @@
+// testminilas
+
 .testimonials {
   padding-bottom: 85px;
 
   &__box {
-
-    &:first-child{
+    &:first-child {
       padding-bottom: 40px;
     }
-    &:last-child{
-      .testimonials__texts{
+    &:last-child {
+      .testimonials__texts {
         padding-left: 12px;
         height: 215px;
         align-self: center;
@@ -34,7 +35,7 @@
     max-width: 370px;
   }
 
-  &__static-title{
+  &__static-title {
     font-size: 30px;
     color: $color-0a47;
     letter-spacing: -0.75px;
@@ -51,12 +52,12 @@
   &__link {
     @include btn-a;
     color: $color-bac3;
-    
-    &::after{
+
+    &::after {
       margin-top: 3px;
       background-color: $color-bac3;
     }
-    i{
+    i {
       color: $color-bac3;
       top: 40%;
     }
@@ -80,7 +81,7 @@
     opacity: 1 !important;
   }
 
-  &__indicator.active{
+  &__indicator.active {
     background-color: $color-0a47 !important;
   }
 
@@ -88,7 +89,7 @@
     padding-left: 110px;
     position: relative;
 
-    &::before{
+    &::before {
       content: "";
       display: inline-block;
       position: absolute;
@@ -101,19 +102,19 @@
     }
   }
 }
-@media only screen and (max-width:1200px) {
-  .testimonials{
+@media only screen and (max-width: 1200px) {
+  .testimonials {
     &__texts {
       padding: 0 12px;
     }
     &__item {
       padding-left: 80px;
       position: relative;
-    }  
+    }
     &__indicators {
       left: 73px !important;
     }
-    &__img{
+    &__img {
       display: inline-block;
       width: 100%;
       margin-bottom: 20px;
