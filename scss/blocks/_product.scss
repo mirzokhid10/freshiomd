@@ -1,0 +1,283 @@
+.products {
+  padding-top: 60px;
+  padding-bottom: 80px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 30px;
+    color: $color-0a47;
+    letter-spacing: -.75px;
+
+    &::before{
+      content: "";
+      display: inline-block;
+      margin-right: 10px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      border: 2px solid $color-bac3;
+    }
+  }
+  .best-sell{
+    &::before{
+      border-color: $color-eb30
+    }
+  }
+
+  &__link {
+    @include btn-a;
+    color: $color-bac3;
+    i{
+      top: 30%;
+      color: $color-bac3;
+    }
+    &::after{
+      background-color: $color-bac3;
+      margin-top: 7px;
+    }
+  }
+
+  &__list {
+    @include mp;
+    position: relative;
+    z-index: 1;
+    padding-top: 30px;
+    overflow: hidden;
+  }
+}
+.product {
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  margin: 0 15px;
+  position: relative;
+  z-index: 1;
+
+  .product__img-scnd{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    transform: rotateY(-90deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover{
+
+    .product__img-scnd{
+      transform: rotateY(0);
+      transition: all 0.6s ease;
+      opacity: 1;
+      visibility: visible;
+    }
+    .product__list{
+      bottom: 0;
+    }
+    .product__line{
+      width: 100px;
+    }
+  }
+
+	&__badges {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include mp;
+    z-index: 5;
+	}
+
+	&__badge {
+    font-size: 10px;
+    text-transform: uppercase;
+    line-height: 15px;
+    padding: 4px 18px 4px 10px;
+    color: $text-white;
+    border-radius: 5px 0 20px 0;
+
+    &:first-child{
+      background-color: #0791d6;
+      width: 96px;
+    }
+    &:last-child{
+      background-color: $color-bac3;
+      width: 75px;
+      margin-top: 2px;
+    }
+	}
+
+  &__imgs {
+    display: block;
+    position: relative;
+  }
+
+  &__img-box{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  &__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    @include mp;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.4s ease;
+    overflow: hidden;
+  }
+
+  &__item {
+    &:not(:last-child){
+      margin-right: 4px;
+    }
+  }
+
+  &__item-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+    background-color: $white;
+    color: $color-0a47;
+    @include transi;
+
+    &:hover{
+      background-color: $color-0a47;
+      color: $text-white;
+    }
+  }
+
+  &__pre-title {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    color: $color-bac3;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover{
+      color: $color-bac3;
+    }
+  }
+
+  &__title {
+    padding: 0 30px;
+    color: $text-black;
+    font-size: 14px;
+    line-height: 20px;
+    @include transi;
+
+    &:hover{
+      color: $color-bac3;
+    }
+  }
+
+  &__price {
+    color: #e0bf96;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
+  &__line{
+    width: 50px;
+    display: block;
+    height: 1px;
+    background-color: $color-bac3;
+    margin: 0 auto 20px auto;
+    @include transi;
+  }
+
+  &__add {
+    @include btn-a;
+    font-size: 12px;
+    font-weight: 700;
+    
+    &:hover{
+      color: $color-bac3;
+
+      i{
+        color: $color-bac3;
+        right: -6px;
+      }
+    }
+    i{
+      font-weight: 600;
+      right: -3px;
+    }
+    &::after{
+      display: none;
+    }
+  }
+}
+.slick-slider:hover{
+    .slick-prev{
+      left: 10px;
+    }
+    .slick-next{
+      right: 10px;
+    }
+  
+}
+.slick-prev {
+  left: -100px;
+}
+.slick-next{
+  right: -100px;
+  background-color: $white;
+}
+.slick-arrow {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e2e2e2;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  z-index: 999;
+  
+  @include transi;
+
+  &:hover{
+    background-color: $color-bac3;
+    &:hover::before{
+      color: $text-white;
+    }
+  }
+  &::before{
+    color: $color-0a47;
+    line-height: 0;
+    position: relative;
+    top: 45%;
+  }
+}
+
+@media only screen and (max-width : 460px) {
+  .products{
+    &__header {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title{
+      margin-bottom: 15px;
+    }
+  }
+}

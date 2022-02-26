@@ -1,0 +1,50 @@
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $font-mazzard-h;
+  background-image: url("../../img/bodybg_top.png") , url("../../img/bodybg__bottom.png");
+  background-position: top , bottom;
+  background-size: 1900px;
+  background-repeat: no-repeat;
+  background-color:  $color-fbf4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+main{
+  background-color: $white;
+  max-width: 1450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}

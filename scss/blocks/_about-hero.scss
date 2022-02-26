@@ -1,0 +1,47 @@
+.about-hero {
+  padding-top: 40px;
+  padding-bottom: 60px;
+
+  &__title {
+    font-size: 28px;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    color: $color-0a47;
+  }
+
+  &__inner-box {
+    padding: 20px;
+    h3{
+      padding-left: 12px;
+    }
+  }
+
+  &__list {
+    @include mp;
+  }
+
+  &__item {
+  }
+
+  &__static-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    line-height: 1.1;
+    color: $color-0a47;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 600;
+    color: $color-aaa;
+    letter-spacing: -1;
+  }
+
+  &__des {
+    font-size: 14px;
+    color: $color-aaa;
+  }
+
+  &__img {
+  }
+}

@@ -1,0 +1,91 @@
+.footer-contact {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__list {
+    @include mp;
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  &__icon {
+    font-size: 48px;
+    color: $color-bac3;
+    margin-right: 15px;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 600;
+    color: $text-black;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    font-size: 20px;
+    color: $color-bac3;
+  }
+
+  &__email {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    color: $text-black;
+    border-bottom: 1px solid $color-bac3;
+
+    &:hover{
+      color: $text-black;
+    }
+  }
+
+  &__payment {
+    width: 50%;
+    @include transi;
+    display: flex;
+    justify-content: end;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+@media only screen and (max-width :992px) {
+  .footer-contact{
+    &__list{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__payment{
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width :768px) {
+  .footer-contact{
+    &__list{
+      width: 100%;
+      margin-bottom: 30px;
+      flex-direction: column;
+    }
+    &__item{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__payment{
+      justify-content: center;
+    }
+  }
+}

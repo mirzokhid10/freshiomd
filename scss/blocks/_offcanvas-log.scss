@@ -1,0 +1,268 @@
+.offcanvas {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e1e1e1;
+    border: 2px solid #363636;
+    border-radius: 13px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #000000;
+  }
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+    border: 0px none #ffffff;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #2e2e2e;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #333333;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  right: 1px;
+  width: 300px !important;
+
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+  }
+
+  &__body {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 20px;
+  }
+
+  &__static-title {
+    font-size: 16px;
+    color: $color-bac3;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    border-radius: 0.3rem;
+    line-height: 1.25;
+    padding: 0.5rem 1rem;
+    color: $color-aaa;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    padding-right: 30px;
+    width: 100%;
+    margin-bottom: 16px;
+
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &__pass{
+    position: relative;
+  }
+
+  &__key {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: rotateZ(315deg);
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    justify-content: space-between;
+
+    &-label{
+      font-size: 12px;
+      color: #414141;
+      margin-left: 7px;
+      cursor: pointer;
+    }
+  }
+
+  &__checked{
+    display: flex;
+    align-items: center;
+  }
+
+  &__forgot {
+    background-color: transparent;
+    border: none;
+    font-size: 12px;
+    color: $color-555;
+  }
+
+  &__submit {
+    background-color: $color-bac3;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 10px 15px 7px 15px;
+    border-color: $color-bac3;
+    color: $text-white;
+    border: none;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: $color-0a47;
+  }
+
+  &__social {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    @include mp;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  &__item {
+    &:nth-child(2){
+      .offcanvas__social-link{
+        background-color: #4285f4;
+        border-color: #4285f4;
+        color: $text-white;
+
+        &:hover{
+          background-color: transparent;
+          color: #4285f4;
+        }
+      }
+    }
+    &:last-child{
+      .offcanvas__social-link{
+        background-color: #53d1f8;
+        border-color: #53d1f8;
+        color: $text-white;
+
+        &:hover{
+          background-color: transparent;
+          color: #53d1f8;
+        }
+      }
+    }
+    &:not(:last-child){
+      margin-right: 5px;
+    }
+  }
+
+  &__social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    @include transi;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4c68a2;
+    background-color: #4c68a2;
+    color: $text-white;
+    cursor: pointer;
+    font-size: 12px;
+
+    &:hover{
+      background-color: transparent;
+      color: #4c68a2;
+    }
+  }
+  .ftr {
+    display: flex;
+
+		&__list {
+      @include mp;
+      width: 50%;
+      padding: 0 15px;
+		}
+
+		&__title {
+      @include mp;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: $color-aaa;
+      line-height: 1.25em;
+      font-weight: 700;
+		}
+
+		&__static-list {
+      @include mp;
+      display: flex;
+      flex-wrap: wrap;
+		}
+      
+    .lang{
+      justify-content: space-between;
+      margin-bottom: 7px;
+      width: 79px;
+      .ftr__item {
+        border: 1px solid transparent;
+        margin: 0;
+        display: inline-block;
+        margin-right: 2px;
+        margin-bottom: 0;
+		  }
+    }
+
+    .active.ftr__item .ftr__link{
+      color: $color-bac3;
+    }
+
+    .optin{
+      .ftr__item{
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+    }
+
+		&__item{
+      display: flex;
+      align-items: center;
+      margin-right: 4px;
+    }
+
+    &__item.active{
+      border-color: $color-bac3;
+    }
+
+		&__link {
+      font-size: 13px;
+      color: $color-aaa;
+      @include transi;
+      line-height: 1.25em;
+
+      i{
+        margin-right: 5px;
+      }
+      &:hover{
+        color: $color-bac3;
+      }
+		}
+  }
+}

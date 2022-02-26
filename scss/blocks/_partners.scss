@@ -1,0 +1,25 @@
+.partners {
+
+  &__list {
+    @include mp;
+    padding: 60px 0;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  &__item {
+    @include mp;
+    width: 100%;
+    padding: 0 15px;
+    opacity: 0.6;
+    @include transi;
+
+    &:hover{
+      opacity: 1
+    }
+  }
+
+  &__img {
+    @include mp;
+    width: 100%;
+  }
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- ANIMATE CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- FONTAWESOME -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Slick -->
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <main>
+    <section id="site-hero">
+      <div class="container">
+        <div class="site-hero">
+          <button class="site-hero__menu"><i class="far fa-bars"></i></button>
+          <a class="site-hero__logo-link col-xl-3 col-lg-3 col-2" href="#">
+            <img class="site-hero__logo" src="img/logo.png" alt="site logo">
+          </a>
+          <div class="site-hero__search-div col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-sp-12">
+            <form class="site-hero__search" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="site-hero__label" for="search"><i class="fal fa-search"></i></label>
+              <input class="site-hero__input" type="search" name="search" id="search" placeholder="Enter Keyword..."
+                required>
+              <button class="site-hero__btn" type="submit">Search</button>
+            </form>
+          </div>
+          <ul class="site-hero__options options col-xl-3 col-lg-3 col-1">
+            <li class="options__item">
+              <button class="options__btn account" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fal fa-user-alt"></i></button>
+            </li>
+            <li class="options__item">
+              <a class="options__btn" href="#"><i class="fal fa-heart"></i></a>
+              <span class="options__notf">0</span>
+            </li>
+            <li class="options__item basket">
+              <button class="options__btn"><i class="fal fa-shopping-basket"></i></button>
+              <span class="options__notf">0</span>
+            </li>
+          </ul>
+          <div class="site-hero__offcanvas offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas__body offcanvas-body">
+              <div class="offcanvas__header">
+                <a class="offcanvas__logo-link" href="#">
+                  <img class="offcanvas__logo" src="img/logo.png" alt="logo">
+                </a>
+                <button type="button" class="offcanvas__btn-close btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <p class="offcanvas__static-title">Existing Account Login</p>
+              <form class="offcanvas__form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="offcanvas__input" type="email" name="email" id="log-email" placeholder="Email Address"
+                  required>
+                <div class="offcanvas__pass">
+                  <input class="offcanvas__input" type="password" name="password" id="log-pass" placeholder="Password"
+                    required>
+                  <label class="offcanvas__key" for="log-pass"><i class="fal fa-key-skeleton"></i></label>
+                </div>
+                <div class="offcanvas__check">
+                  <div class="offcanvas__checked">
+                    <input class="offcanvas__check-input" type="checkbox" name="check" id="check">
+                    <label class="offcanvas__check-label" for="check">Remember Me</label>
+                  </div>
+                  <button class="offcanvas__forgot" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Forgot
+                    Password ?</button>
+                </div>
+                <button class="offcanvas__submit" type="submit">Login</button>
+              </form>
+              <form class="offcanvas__form accordion-collapse collapse" action="https://echo.htmlacademy.ru/"
+                method="post" id="flush-collapseOne" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <p class="offcanvas__title">Reset Password</p>
+                <input class="offcanvas__input" type="email" name="email" id="log-email-reset"
+                  placeholder="Email Address" required>
+                <button class="offcanvas__submit" type="submit">Reset Password</button>
+              </form>
+              <div class="offcanvas__social">
+                <p class="offcanvas__static-title">Connect with Social Networks</p>
+                <ul class="offcanvas__list">
+                  <li class="offcanvas__item"><a class="offcanvas__social-link" href="#"><i
+                        class="fab fa-facebook-f"></i></a></li>
+                  <li class="offcanvas__item"><a class="offcanvas__social-link" href="#"><i
+                        class="fab fa-google"></i></a></li>
+                  <li class="offcanvas__item"><a class="offcanvas__social-link" href="#"><i
+                        class="fab fa-twitter"></i></a></li>
+                </ul>
+              </div>
+              <p class="offcanvas__static-title">New Account Register</p>
+              <form class="offcanvas__form" action="https://echo.htmlacademy.ru/" method="post">
+                <input class="offcanvas__input" type="text" name="f-name" id="f-name" placeholder="First Name" required>
+                <input class="offcanvas__input" type="text" name="l-name" id="l-name" placeholder="Last Name" required>
+                <input class="offcanvas__input" type="email" name="email" id="log-email-register"
+                  placeholder="Email Address" required>
+                <div class="offcanvas__pass">
+                  <input class="offcanvas__input" type="password" name="password" id="log-pass1" placeholder="Password"
+                    required>
+                  <label class="offcanvas__key" for="log-pass1"><i class="fal fa-key-skeleton"></i></label>
+                </div>
+                <div class="offcanvas__check">
+                  <div class="offcanvas__checked">
+                    <input class="offcanvas__check-input" type="checkbox" name="check" id="check1">
+                    <label class="offcanvas__check-label" for="check1">I agree to the terms.</label>
+                  </div>
+                </div>
+                <button class="offcanvas__submit" type="submit">Create an Account</button>
+              </form>
+              <div class="offcanvas__footer ftr">
+                <div class="ftr__list">
+                  <p class="ftr__title">Language:</p>
+                  <ul class="ftr__static-list lang">
+                    <li class="ftr__item active">
+                      <a class="ftr__img-link" href="#"><img class="ftr__img" src="img/usa.jpg" alt="usa"></a>
+                    </li>
+                    <li class="ftr__item">
+                      <a class="ftr__img-link" href="#"><img class="ftr__img" src="img/france.jpg" alt="france"></a>
+                    </li>
+                    <li class="ftr__item">
+                      <a class="ftr__img-link" href="#"><img class="ftr__img" src="img/german.jpg" alt="german"></a>
+                    </li>
+                    <li class="ftr__item">
+                      <a class="ftr__img-link" href="#"><img class="ftr__img" src="img/italia.jpg" alt="italia"></a>
+                    </li>
+                    <li class="ftr__item">
+                      <a class="ftr__img-link" href="#"><img class="ftr__img" src="img/spain.jpg" alt="spain"></a>
+                    </li>
+                    <li class="ftr__item">
+                      <a class="ftr__img-link" href="#"><img class="ftr__img" src="img/saudia.jpg" alt="saudia"></a>
+                    </li>
+                  </ul>
+                  <p class="ftr__title">Currency:</p>
+                  <ul class="ftr__static-list">
+                    <li class="ftr__item">
+                      <a class="ftr__link" href="#">EUR</a>
+                    </li>
+                    <li class="ftr__item active">
+                      <a class="ftr__link" href="#">USD</a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="ftr__list optin">
+                  <li class="ftr__item">
+                    <a class="ftr__link" href="#"><i class="fas fa-sign-in-alt"></i>Sign in</a>
+                  </li>
+                  <li class="ftr__item">
+                    <a class="ftr__link" href="#"><i class="fal fa-user"></i>My account</a>
+                  </li>
+                  <li class="ftr__item">
+                    <a class="ftr__link" href="#"><i class="fal fa-heart"></i>Wishlist (0)</a>
+                  </li>
+                  <li class="ftr__item">
+                    <a class="ftr__link" href="#"><i class="fas fa-send-backward"></i>Compare (0)</a>
+                  </li>
+                  <li class="ftr__item">
+                    <a class="ftr__link" href="#"><i class="far fa-check-square"></i>Checkout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="site-hero__option option col-xl-3 col-lg-3 col-md-12 col-12">
+            <div class="option__item col-3">
+              <button class="option__btn options__btn account"><i class="fal fa-store"></i></button>
+              <p class="option__text options__text">Shop</p>
+            </div>
+            <div class="option__item col-3">
+              <a class="option__btn options__btn " href="#"><i class="fal fa-heart"></i><span class="option__notf options__notf ">0</span></a>
+              <p class="option__text options__text">Home</p>
+            </div>
+            <div class="option__item col-3">
+              <button class="option__btn options__btn account" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fal fa-user-alt"></i></button>
+              <p class="option__text options__text">Home</p>
+            </div>
+            <div class="option__item col-3 search">
+              <button class="option__btn options__btn"><i id="serch" class="fal fa-search"></i></button>
+              <p class="option__text options__text">Search</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navig-top">
+        <div class="container">
+          <div class="site-navig navig">
+            <button class="navig__menu-btn"><span><i class="fal fa-bars"></i>Shop by Department</span></button>
+            <div class="navig__toggle navig-toggle">
+              <ul class="navig-toggle__list">
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-salad"></i>Fruits & Vegetables</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-meat"></i>Supplyments</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-egg-fried"></i>Dairy Bread & Eggs</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-pizza-slice"></i>Package Foods</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-apple-alt"></i>Beauty & Care</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-volleyball-ball"></i>Health & Wellness</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-ice-cream"></i>Baby & Infants</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-leaf"></i>Home Care</a>
+                </li>
+                <li class="navig-toggle__item">
+                  <a class="navig-toggle__link" href="#"><i class="fal fa-badge-percent"></i>Hot Offers</a>
+                </li>
+              </ul>
+            </div>
+            <ul class="navig__list">
+              <li class="navig__item close-btn">
+                <button class="navig__close"><i class="fal fa-times"></i> Close</button>
+              </li>
+              <li class="navig__item">
+                <a class="navig__link" href="#">Home</a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="double-box"><i class="fas fa-chevron-double-right"></i></div>
+                <div class="navig__pop-up pop-up home-up">
+                  <ul class="pop-up__list">
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 1</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 2</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 3</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 4</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 5</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 6</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 7</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Home 8</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navig__item">
+                <a class="navig__link" href="#">Shop</a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="double-box"><i class="fas fa-chevron-double-right"></i></div>
+                <div class="navig__pop-up pop-up shop-up">
+                  <ul class="pop-up__list">
+                    <li class="pop-up__item"><a class="pop-up__title" href="#">Categories 1</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Vegetable</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Tomato</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Cabbage</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Juice</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Meat</a></li>
+                  </ul>
+                  <ul class="pop-up__list">
+                    <li class="pop-up__item"><a class="pop-up__title" href="#">Categories 2</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Beef</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Park</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Coconout</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Broccoli</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Fish</a></li>
+                  </ul>
+                  <ul class="pop-up__list">
+                    <li class="pop-up__item"><a class="pop-up__title" href="#">Categories 3</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Seafood</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Octopus</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Fish</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Park</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">More</a></li>
+                  </ul>
+                  <ul class="pop-up__list">
+                    <li class="pop-up__item"><a class="pop-up__title" href="#">Categories 4</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Vegetables</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Fresh Meat</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Fruit & Nut Gifts</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Fresh Berries</a></li>
+                    <li class="pop-up__item"><a class="pop-up__link" href="#">Fat Freezing</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navig__item">
+                <a class="navig__link" href="#">Pages</a>
+                <i class="fas fa-chevron-down"></i>
+                <div class="double-box"><i class="fas fa-chevron-double-right"></i></div>
+                <div class="navig__pop-up pop-up pages-up">
+                  <ul class="pop-up__list">
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page1.png" alt="page">
+                      </a>
+                    </li>
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page2.png" alt="page">
+                      </a>
+                    </li>
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page3.png" alt="page">
+                      </a>
+                    </li>
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page4.png" alt="page">
+                      </a>
+                    </li>
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page5.png" alt="page">
+                      </a>
+                    </li>
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page6.png" alt="page">
+                      </a>
+                    </li>
+                    <li class="pop-up__item">
+                      <a class="pop-up__link" href="#">
+                        <img class="pop-up__img img-fluid" src="img/page7.png" alt="page">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="navig__item">
+                <a class="navig__link" href="#">Blog</a>
+              </li>
+              <li class="navig__item">
+                <a class="navig__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="breadcrumb">
+      <div class="container">
+        <div class="breadcrumb">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="index.html">Home > </a></li>
+            <li class="breadcrumb__item"><a class="breadcrumb__link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contact-hero">
+      <div class="container">
+        <div class="contact-hero row">
+          <div class="contact-hero__info col-xs-12 col-sm-4 col-md-3">
+            <h3 class="contact-hero__title">STORE INFORMATION</h3>
+            <ul class="contact-hero__list">
+              <li class="contact-hero__item">
+                <i class="fas fa-map-marker-alt contact-hero__icon"></i>
+                <address class="contact-hero__static-title">Freshio <br>France</address>
+              </li>
+              <li class="contact-hero__item">
+                <i class="fas fa-envelope contact-hero__icon"></i>
+                <div class="contact-hero__texts">
+                  <p class="contact-hero__static-title">Email us:</p>
+                  <a class="contact-hero__email" href="mailto:demo@demo.com">demo@demo.com</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-hero__form col-xs-12 col-md-8" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="contact-hero__form-inner row">
+              <h3 class="contact-hero__title">CONTACT US</h3>
+              <div class="contact-hero__inputs">
+                <label class="contact-hero__label col-md-3 col-12" for="subject">Subject</label>
+                <select class="contact-hero__input col-md-6 col-12" name="subject" id="subject">
+                  <option value="Customer Service">Customer Service</option>
+                  <option value="Webmaster">Webmaster</option>
+                </select>
+              </div>
+              <div class="contact-hero__inputs">
+                <label class="contact-hero__label col-md-3 col-12" for="contact-hero-email">Email address</label>
+                <input class="contact-hero__input col-md-6 col-12" type="email" name="email" id="contact-hero-email" placeholder="your@email.com" required>
+              </div>
+              <div class="contact-hero__inputs">
+                <label class="contact-hero__label col-md-3 col-12" for="contact-hero-file">Attachment</label>
+                <input class="contact-hero__input col-md-6 col-12 choose-file" type="file" name="File" id="contact-hero-file" required>
+                <p class="contact-hero__form-text">optional</p>
+              </div>
+              <div class="contact-hero__inputs">
+                <label class="contact-hero__label col-md-3 col-12 textarea" for="messgae-form">Message</label>
+                <textarea class="contact-hero__input col-md-6 col-12" name="message" id="messgae-form" placeholder="How can we help?" cols="30" rows="10" required></textarea>
+              </div>
+            <button class="contact-hero__btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer-contact">
+      <div class="container">
+        <div class="footer-contact">
+          <ul class="footer-contact__list">
+            <li class="footer-contact__item">
+              <i class="fal fa-headphones-alt footer-contact__icon"></i>
+              <div class="footer-contact__texts">
+                <h3 class="footer-contact__title">CALL US 24/7</h3>
+                <a class="footer-contact__link" href="tel:4455667788">(1800)-88-66-991</a>
+              </div>
+            </li>
+            <li class="footer-contact__item">
+              <i class="fal fa-envelope-open-text footer-contact__icon"></i>
+              <div class="footer-contact__texts">
+                <h3 class="footer-contact__title">EMAIL US</h3>
+                <a class="footer-contact__email" href="mailto:demo@demo.com">demo@demo.com</a>
+              </div>
+            </li>
+          </ul>
+          <a class="footer-contact__payment" href="#"><img class="footer-contact__payment-img" src="img/freshio_payment_image.png" alt=""></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__up row">
+            <div class="footer__column col-lg-3 col-md-4 col-12">
+              <p class="footer__title">STORE LOCATION</p>
+              <ul class="footer__list">
+                <li class="footer__item"><address class="footer__text">9066 Green Lake Drive  Chevy <br> Chase, MD 20815</address></li>
+                <li class="footer__item">
+                  <p class="footer__static-title">Monday - Saturday:</p>
+                  <p class="footer__text">8:00 am - 4:00pm</p>
+                </li>
+                <li class="footer__item">
+                  <p class="footer__static-title">Sunday:</p>
+                  <p class="footer__text">9:00 am - 5:00pm</p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column col-lg-2 col-md-4 col-12">
+              <p class="footer__title">INFORMATION</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Blog</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Check out</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Service</a></li>
+              </ul>
+            </div>
+            <div class="footer__column col-lg-2 col-md-4 col-12">
+              <p class="footer__title">MY ACCOUNT</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">My Account</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Shopping cart</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Shop</a></li>
+              </ul>
+            </div>
+            <div class="footer__column col-lg-2 col-md-4 col-12">
+              <p class="footer__title">CATEGORIES</p>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#">Fruits & Vegetables</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Dairy Products</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Package Foods</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Beverage</a></li>
+                <li class="footer__item"><a class="footer__link" href="#">Beverage</a></li>
+              </ul>
+            </div>
+            <div class="footer__column col-lg-2 col-md-4 col-12">
+              <p class="footer__title">ACCEPT PAYMENT</p>
+              <img class="footer__img" src="img/freshio_h2_payment.png" alt="payments">
+              <p class="footer__title">FOLLOW US</p>
+            </div>
+          </div>
+          <div class="footer__down">
+            <p class="footer__copyright">Copyright © 2021 <span>Freshio</span>. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <!-- Js -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

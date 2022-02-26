@@ -1,0 +1,36 @@
+#breadcrumb{
+  @include bg(center);
+  background-size: cover;
+  background-image: url("../../img/lime-img.jpg");
+}
+.breadcrumb {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: start;
+    @include mp;
+  }
+
+  &__item {
+    margin-right: 5px;
+  }
+
+  &__link{
+    font-size: 14px;
+    color: $color-555;
+    @include transi;
+
+    &:hover{
+      color: $color-bac3;
+    }
+  }
+}
+.navig-top{
+  background-color: $color-0a47;
+}

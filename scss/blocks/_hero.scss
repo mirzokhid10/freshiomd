@@ -1,0 +1,332 @@
+.hero {
+  padding: 0;
+  padding-top: 30px;
+  --bs-gutter-x: 0rem !important;
+
+  &__big {
+    margin: 0;
+    padding-right: 20px;
+    --bs-gutter-x: 0rem !important;
+  }
+
+  &__small {
+  --bs-gutter-x: 0 !important;
+  }
+}
+.carousel {
+  position: relative;
+  
+	&__item {
+    position: relative;
+	}
+
+  &__texts{
+    position: absolute;
+    top: 129px;
+    left: 110px;
+    overflow: hidden
+  }
+
+	&__pre-title {
+    @include pre-title;
+    margin-bottom: 32px;
+	}
+
+	&__title {
+    @include title;
+    margin-bottom: 32px;
+	}
+
+	&__btn {
+    @include btn-a;
+	}
+
+  &__inner {
+    position: relative;
+  }
+
+  &__item {
+    padding-top: 80%;
+    @include bg(center);
+    background-size: cover;
+    background-image: url("../../img/freshio_h2-slide1.png");
+    &:last-child{
+      background-image: url("../../img/freshio_h2-slide2.png");
+    }
+  }
+
+  &__btns{
+    position: absolute;
+    bottom: 42px;
+    right: 42px;
+    z-index: 22;
+  }
+  &__control {
+    width: 50px;
+    height: 50px;
+    background-color: $white;
+    border-radius: 50%;
+    display: inline-block;
+    border: none;
+
+    &:hover{
+      background-color: $color-bac3;
+    }
+  }
+}
+.hero-small {
+
+  &__box {
+    position: relative;
+    
+    &:first-child{
+      margin-bottom: 24px;
+
+      .hero-small__texts{
+        top: 50%;
+        transform: translateY(-50%);
+        left: 45px;
+      }
+      .hero-small__title{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 110px;
+      }
+    }
+    &:last-child{
+      text-align: center;
+      .hero-small__title{
+        color: $color-f4ed;
+      }
+      .hero-small__pre-title{
+        color: $text-white;
+      }
+      .hero-small__texts{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .hero-small__btn{
+        font-size: 12px;
+        color: $text-white;
+        font-weight: 700;
+        padding: 12px 29px 9px 29px;
+        background-color: $color-bac3;
+        border-radius: 30px;
+
+        &:hover{
+          background-color: $white;
+          color: $color-bac3;
+
+          i{
+            color: $color-bac3;
+          }
+        }
+        i{
+          position: relative;
+          top: 3px;
+          margin-left: 4px;
+          color: $text-white;
+        }
+        &::after{
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__texts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 100%;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__btn {
+    @include btn-a;
+  }
+
+  &__pre-title {
+    @include pre-title;
+  }
+
+  &__text {
+    color: $text-white;
+    margin-bottom: 20px;
+    font-size: 14px;
+    // width: 100%;
+  }
+}
+@media only screen and (max-width : 992px) {
+  .hero{
+    &__big{
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+  }
+  .hero-small{
+    &__box{
+      padding-left: 10px;
+      
+      &:first-child{
+        padding-right: 10px;
+        padding-left: 0;
+      }
+    }
+  }
+  .carousel{
+    &__item{
+      background-size: contain;
+    }
+  }
+}
+@media only screen and (max-width : 768px) {
+  .carousel{
+
+    &__texts{
+      position: absolute;
+      top: 100px;
+      left: 85px;
+    }
+    &__pre-title {
+      margin-bottom: 24px;
+      font-size: 20px;
+      line-height: 20px;  
+    }
+  
+    &__title {
+      @include title;
+      margin-bottom: 24px;
+      font-size: 30px;
+      line-height: 35px;
+    }
+    &__control {
+      width: 30px;
+      height: 30px;
+
+      i{
+        font-size: 18px;
+      }
+    }
+  }
+  .hero-small{
+
+    &__box{
+      height: 220px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("../../img/freshio-cart.png");
+
+      &:first-child{
+        .hero-small__title{
+          margin-bottom: 25px;
+        }
+      }
+      &:last-child{
+        background-image: url("../../img/green_bg.png");
+      }
+    }
+    .hero-small__img{
+      visibility: hidden;
+    }
+  }
+}
+@media only screen and (max-width : 576px) {
+  .carousel{
+
+    &__texts{
+      position: absolute;
+      top: 70px;
+      left: 60px;
+    }
+    &__pre-title {
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: 16px;  
+    }
+  
+    &__title {
+      @include title;
+      margin-bottom: 24px;
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}
+@media only screen and (max-width : 495px) {
+  .carousel{
+
+    &__texts{
+      position: absolute;
+      top: 50px;
+      left: 45px;
+    }
+    &__pre-title {
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 14px;  
+    }
+  
+    &__title {
+      @include title;
+      margin-bottom: 12px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+    &__control {
+      i{
+        font-size: 14px;
+      }
+    }
+  }
+  .hero-small{
+
+    &__box{
+      &:last-child{
+        .hero-small__texts{
+          width: 100%;
+        }
+        .hero-small__pre-title{
+          margin-bottom: 12px;
+        }
+        .hero-small__title{
+          margin-bottom: 12px;
+        }
+        .hero-small__text{
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width : 360px) {
+  .carousel{
+
+    &__texts{
+      position: absolute;
+      top: 40px;
+      left: 35px;
+    }
+    &__pre-title {
+      margin-bottom: 9px;
+      font-size: 14px;
+      line-height: 14px;  
+    }
+  
+    &__title {
+      @include title;
+      margin-bottom: 9px;
+      font-size: 18px;
+      line-height: 22px;
+    }
+    &__btns{
+      bottom: 20px;
+      right: 20px;
+    }
+  }
+}

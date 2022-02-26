@@ -1,0 +1,61 @@
+@mixin bg($posi) {
+  background-position: $posi;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@mixin transi {
+  transition: all 0.4s ease;
+}
+@mixin mp {
+  margin: 0;
+  padding: 0;
+}
+@mixin pre-title {
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-bac3;
+  font-family: $font-richmond;
+}
+@mixin title {
+  font-size: 40px;
+  line-height: 45px;
+  color: $color-0a47;
+}
+@mixin btn-a {
+  font-size: 12px;
+  color: $text-black;
+  font-weight: 700;
+  display: inline-block;
+  @include transi;
+  position: relative;
+  padding-right: 10px;
+
+  &:hover{
+    color: $color-bac3;
+
+    &::after{
+      background-color: $color-bac3;
+    }
+    i{
+      right: -3px;
+      color: $color-bac3;
+    }
+  }
+  &::after{
+    content: '';
+    height: 1px;
+    width: calc(100% + 8px);
+    background-color: $black;
+    display: block;
+    @include transi;
+  }
+  i{
+    font-size: 9px;
+    color: $text-black;
+    @include transi;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

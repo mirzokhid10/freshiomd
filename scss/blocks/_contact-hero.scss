@@ -1,0 +1,116 @@
+.contact-hero {
+
+  &__info {
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: #414141;
+    margin-bottom: 2rem;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__list {
+  }
+
+  &__item {
+    display: flex;
+    padding-top: 1rem;
+    &:first-child{
+      margin: 0;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+  }
+
+  &__icon {
+    width: 3.5rem;
+    font-size: 2rem;
+    color: #878787;
+  }
+
+  &__texts {
+  }
+
+  &__static-title {
+    color: #414141;
+    font-size: .81rem;
+    line-height: 1.25rem;
+    margin: 0;
+  }
+
+  &__email {
+    color: #414141;
+    font-size: .8125rem;
+    @include transi;
+
+    &:hover{
+      color: $color-bac3;
+    }
+  }
+
+  &__form {
+  }
+
+  &__form-inner {
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.034);
+    margin-bottom: 0.75rem;
+    background-color: $white;   
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 1.25rem;
+  }
+
+  &__inputs {
+    display: flex;
+    align-items: start;
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    padding-top: 0.625rem;
+    color: #414141;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__input {
+    background: #ebebeb;
+    background-size: 1.25rem 1.25rem;
+    padding-right: 2rem;
+    height: 38px;
+    color: #aaa;
+    border: 1px solid #e2e2e2;
+    padding: 0.5rem 1rem;
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &__form-text {
+    margin: 0;
+    align-self: center;
+    color: #878787;
+    margin-left: 30px;
+    font-size: 14px;
+  }
+  &__btn{
+    max-width: 91px;
+    display: inline-block;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: initial;
+    background: #bac34e;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #000;
+    transition: all 0.3s;
+    margin-left: auto;
+
+    &:hover{
+      background-color: $color-0a47;
+      color: $text-white;
+    }
+  }
+}
