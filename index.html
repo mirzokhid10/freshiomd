@@ -35,6 +35,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/stylesheet.css" />
     <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header id="site-header">
@@ -897,7 +901,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -936,7 +940,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -959,7 +963,7 @@
                   >
                   <p class="product__price">$15.00</p>
                   <div class="product__line"></div>
-                  <a href="#" class="product__add"
+                  <a  class="product__add"
                     >Add to cart<i class="far fa-chevron-double-right"></i
                   ></a>
                 </div>
@@ -975,7 +979,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -1014,7 +1018,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link"  id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -1053,7 +1057,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -1092,7 +1096,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -1131,7 +1135,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -1170,7 +1174,7 @@
                   </a>
                   <ul class="product__list">
                     <li class="product__item">
-                      <a class="product__item-link" href="#"
+                      <a class="product__item-link" id="myBtn"
                         ><i class="fal fa-eye"></i
                       ></a>
                     </li>
@@ -2053,17 +2057,152 @@
           </div>
         </div>
       </footer>
+      <!-- <button id="myBtn">Open Modal</button> -->
     </main>
 
-    <!-- modals for sliders -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body p-3">
+            <div class="d-flex flex-wrap">
+              <div
+                class="modal-image d-flex col-sm-6 col-md-6 px-3 justify-content-between"
+              >
+                <div class="modal-main-img col-sm-9">
+                  <img
+                    class="w-100"
+                    src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/24-home_default/hummingbird-printed-t-shirt.jpg"
+                    alt="modal-img-card1"
+                  />
+                </div>
+                <div class="modal-mini-img col-sm-2">
+                  <ul class="modal-selector__items p-0">
+                    
+                    <li class="modal-selector__lists">
+                      <a href="#" class="modal-selector__link">
+                        <img
+                          src="https://demo73leotheme.b-cdn.net/prestashop/at_freshio/24-home_default/hummingbird-printed-t-shirt.jpg"
+                          alt=""
+                        />
+                      </a>
+                    </li>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="modal-content__info col-sm-6 col-md-6 px-3">
+                <h1 class="modal-content__title">
+                  Grassfed Organic Turmeric Superghee
+                </h1>
+                <div class="modal-content__price">
+                  <span class="modal-content__curprice">$ 15.00 </span>
+                </div>
+                <div class="modal-content__desc">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
+                </div>
+                <div class="product-content__actions">
+                  <form action="">
+                    <div class="product-content__addtocart">
+                      <div class="product-content__quantity"></div>
+                      <div class="product-content__buttons my-4">
+                        <input
+                          class="product-input__buttons"
+                          type="number"
+                          id="quantity"
+                          name="quantity"
+                          min="1"
+                          max="5"
+                          placeholder="0"
+                        />
+                        <button
+                          type="submit"
+                          class="product-form__buttons ms-2"
+                        >
+                          add to court
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="product-content__links d-flex gap-4">
+                  <div class="product-content__wishlist">
+                    <a href=""
+                      ><span
+                        ><i class="bx bx-heart"></i>
+                        <span>add to wishlist</span></span
+                      >
+                    </a>
+                  </div>
+                  <div class="product-content__campare">
+                    <a href=""
+                      ><span>
+                        <i class="fa-regular fa-shuffle"></i>
+                        <span>add to wishlist</span></span
+                      >
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="modal-footer">
+            <div class="modal-footer__socials justify-content-end">
+              <ul class="modal-socials p-0 gap-3">
+                <li
+                  class="modal-social__lists"
+                  style="color: black; text-transform: capitalize"
+                >
+                  share:
+                </li>
+                <li class="modal-social__lists">
+                  <a class="modal-social__link" href="#"
+                    ><i
+                      style="color: #007cf7"
+                      class="social-icon bx bxl-facebook"
+                    ></i
+                  ></a>
+                </li>
+                <li class="modal-social__lists">
+                  <a class="modal-social__link" href="#"
+                    ><i
+                      style="color: #1d9cea"
+                      class="social-icon bx bxl-twitter"
+                    ></i
+                  ></a>
+                </li>
+                <li class="modal-social__lists">
+                  <a class="modal-social__link" href="#"
+                    ><i
+                      style="color: #bd081c"
+                      class="social-icon bx bxl-pinterest"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
     <!-- Js -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.slim.js"
@@ -2072,5 +2211,6 @@
     ></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
   </body>
 </html>

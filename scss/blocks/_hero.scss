@@ -10,36 +10,37 @@
   }
 
   &__small {
-  --bs-gutter-x: 0 !important;
+    --bs-gutter-x: 0 !important;
   }
 }
 .carousel {
   position: relative;
-  
-	&__item {
-    position: relative;
-	}
 
-  &__texts{
+  &__item {
+    position: relative;
+    height: 50px;
+  }
+
+  &__texts {
     position: absolute;
     top: 129px;
     left: 110px;
-    overflow: hidden
+    overflow: hidden;
   }
 
-	&__pre-title {
+  &__pre-title {
     @include pre-title;
     margin-bottom: 32px;
-	}
+  }
 
-	&__title {
+  &__title {
     @include title;
     margin-bottom: 32px;
-	}
+  }
 
-	&__btn {
+  &__btn {
     @include btn-a;
-	}
+  }
 
   &__inner {
     position: relative;
@@ -50,12 +51,12 @@
     @include bg(center);
     background-size: cover;
     background-image: url("../../img/freshio_h2-slide1.png");
-    &:last-child{
+    &:last-child {
       background-image: url("../../img/freshio_h2-slide2.png");
     }
   }
 
-  &__btns{
+  &__btns {
     position: absolute;
     bottom: 42px;
     right: 42px;
@@ -69,44 +70,43 @@
     display: inline-block;
     border: none;
 
-    &:hover{
+    &:hover {
       background-color: $color-bac3;
     }
   }
 }
 .hero-small {
-
   &__box {
     position: relative;
-    
-    &:first-child{
+
+    &:first-child {
       margin-bottom: 24px;
 
-      .hero-small__texts{
+      .hero-small__texts {
         top: 50%;
         transform: translateY(-50%);
         left: 45px;
       }
-      .hero-small__title{
+      .hero-small__title {
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 110px;
       }
     }
-    &:last-child{
+    &:last-child {
       text-align: center;
-      .hero-small__title{
+      .hero-small__title {
         color: $color-f4ed;
       }
-      .hero-small__pre-title{
+      .hero-small__pre-title {
         color: $text-white;
       }
-      .hero-small__texts{
+      .hero-small__texts {
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
       }
-      .hero-small__btn{
+      .hero-small__btn {
         font-size: 12px;
         color: $text-white;
         font-weight: 700;
@@ -114,21 +114,21 @@
         background-color: $color-bac3;
         border-radius: 30px;
 
-        &:hover{
+        &:hover {
           background-color: $white;
           color: $color-bac3;
 
-          i{
+          i {
             color: $color-bac3;
           }
         }
-        i{
+        i {
           position: relative;
           top: 3px;
           margin-left: 4px;
           color: $text-white;
         }
-        &::after{
+        &::after {
           display: none;
         }
       }
@@ -161,33 +161,32 @@
     // width: 100%;
   }
 }
-@media only screen and (max-width : 992px) {
-  .hero{
-    &__big{
+@media only screen and (max-width: 992px) {
+  .hero {
+    &__big {
       margin-bottom: 20px;
       padding-right: 0;
     }
   }
-  .hero-small{
-    &__box{
+  .hero-small {
+    &__box {
       padding-left: 10px;
-      
-      &:first-child{
+
+      &:first-child {
         padding-right: 10px;
         padding-left: 0;
       }
     }
   }
-  .carousel{
-    &__item{
+  .carousel {
+    &__item {
       background-size: contain;
     }
   }
 }
-@media only screen and (max-width : 768px) {
-  .carousel{
-
-    &__texts{
+@media only screen and (max-width: 768px) {
+  .carousel {
+    &__texts {
       position: absolute;
       top: 100px;
       left: 85px;
@@ -195,9 +194,9 @@
     &__pre-title {
       margin-bottom: 24px;
       font-size: 20px;
-      line-height: 20px;  
+      line-height: 20px;
     }
-  
+
     &__title {
       @include title;
       margin-bottom: 24px;
@@ -208,38 +207,36 @@
       width: 30px;
       height: 30px;
 
-      i{
+      i {
         font-size: 18px;
       }
     }
   }
-  .hero-small{
-
-    &__box{
+  .hero-small {
+    &__box {
       height: 220px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       background-image: url("../../img/freshio-cart.png");
 
-      &:first-child{
-        .hero-small__title{
+      &:first-child {
+        .hero-small__title {
           margin-bottom: 25px;
         }
       }
-      &:last-child{
+      &:last-child {
         background-image: url("../../img/green_bg.png");
       }
     }
-    .hero-small__img{
+    .hero-small__img {
       visibility: hidden;
     }
   }
 }
-@media only screen and (max-width : 576px) {
-  .carousel{
-
-    &__texts{
+@media only screen and (max-width: 576px) {
+  .carousel {
+    &__texts {
       position: absolute;
       top: 70px;
       left: 60px;
@@ -247,9 +244,9 @@
     &__pre-title {
       margin-bottom: 24px;
       font-size: 16px;
-      line-height: 16px;  
+      line-height: 16px;
     }
-  
+
     &__title {
       @include title;
       margin-bottom: 24px;
@@ -258,10 +255,9 @@
     }
   }
 }
-@media only screen and (max-width : 495px) {
-  .carousel{
-
-    &__texts{
+@media only screen and (max-width: 495px) {
+  .carousel {
+    &__texts {
       position: absolute;
       top: 50px;
       left: 45px;
@@ -269,9 +265,9 @@
     &__pre-title {
       margin-bottom: 12px;
       font-size: 14px;
-      line-height: 14px;  
+      line-height: 14px;
     }
-  
+
     &__title {
       @include title;
       margin-bottom: 12px;
@@ -279,35 +275,33 @@
       line-height: 25px;
     }
     &__control {
-      i{
+      i {
         font-size: 14px;
       }
     }
   }
-  .hero-small{
-
-    &__box{
-      &:last-child{
-        .hero-small__texts{
+  .hero-small {
+    &__box {
+      &:last-child {
+        .hero-small__texts {
           width: 100%;
         }
-        .hero-small__pre-title{
+        .hero-small__pre-title {
           margin-bottom: 12px;
         }
-        .hero-small__title{
+        .hero-small__title {
           margin-bottom: 12px;
         }
-        .hero-small__text{
+        .hero-small__text {
           margin-bottom: 12px;
         }
       }
     }
   }
 }
-@media only screen and (max-width : 360px) {
-  .carousel{
-
-    &__texts{
+@media only screen and (max-width: 360px) {
+  .carousel {
+    &__texts {
       position: absolute;
       top: 40px;
       left: 35px;
@@ -315,16 +309,16 @@
     &__pre-title {
       margin-bottom: 9px;
       font-size: 14px;
-      line-height: 14px;  
+      line-height: 14px;
     }
-  
+
     &__title {
       @include title;
       margin-bottom: 9px;
       font-size: 18px;
       line-height: 22px;
     }
-    &__btns{
+    &__btns {
       bottom: 20px;
       right: 20px;
     }
